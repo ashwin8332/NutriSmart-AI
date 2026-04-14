@@ -1,0 +1,1310 @@
+{
+  "generatedAt": "2026-03-05T23:01:32.146Z",
+  "source": {
+    "claudeSettings": "/home/nothiingf4/.claude/settings.json",
+    "claudeInstalledPlugins": "/home/nothiingf4/.claude/plugins/installed_plugins.json",
+    "claudeKnownMarketplaces": "/home/nothiingf4/.claude/plugins/known_marketplaces.json"
+  },
+  "summary": {
+    "enabledPluginCount": 88,
+    "copiedUserSkillCount": 12,
+    "copiedPluginSkillCount": 152,
+    "pluginPackagesCopied": 88
+  },
+  "marketplaces": {
+    "claude-plugins-official": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-plugins-official"
+      },
+      "installLocation": "/home/nothiingf4/.claude/plugins/marketplaces/claude-plugins-official",
+      "lastUpdated": "2026-03-05T19:39:33.679Z"
+    },
+    "claude-code-workflows": {
+      "source": {
+        "source": "github",
+        "repo": "wshobson/agents"
+      },
+      "installLocation": "/home/nothiingf4/.claude/plugins/marketplaces/claude-code-workflows",
+      "lastUpdated": "2026-03-05T19:10:42.945Z"
+    },
+    "claude-code-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/claude-code"
+      },
+      "installLocation": "/home/nothiingf4/.claude/plugins/marketplaces/claude-code-plugins",
+      "lastUpdated": "2026-03-05T19:33:30.427Z"
+    },
+    "cartographer-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "kingbootoshi/cartographer"
+      },
+      "installLocation": "/home/nothiingf4/.claude/plugins/marketplaces/cartographer-marketplace",
+      "lastUpdated": "2026-03-05T19:33:33.149Z"
+    },
+    "codex-orchestrator-marketplace": {
+      "source": {
+        "source": "github",
+        "repo": "kingbootoshi/codex-orchestrator"
+      },
+      "installLocation": "/home/nothiingf4/.claude/plugins/marketplaces/codex-orchestrator-marketplace",
+      "lastUpdated": "2026-03-05T22:41:14.626Z"
+    }
+  },
+  "enabledPlugins": [
+    {
+      "id": "Notion@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/Notion/0.1.0",
+      "version": "0.1.0",
+      "gitCommitSha": "9847f2aa1a15f25df35ed1fb7b4557dbb60cd651",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/Notion@claude-plugins-official/skills/notion/knowledge-capture",
+        "skills/plugins/Notion@claude-plugins-official/skills/notion/meeting-intelligence",
+        "skills/plugins/Notion@claude-plugins-official/skills/notion/research-documentation",
+        "skills/plugins/Notion@claude-plugins-official/skills/notion/spec-to-implementation"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "agent-orchestration@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/agent-orchestration/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "agent-sdk-dev@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/agent-sdk-dev/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "agent-teams@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/agent-teams/1.0.2",
+      "version": "1.0.2",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/agent-teams@claude-code-workflows/skills/multi-reviewer-patterns",
+        "skills/plugins/agent-teams@claude-code-workflows/skills/parallel-debugging",
+        "skills/plugins/agent-teams@claude-code-workflows/skills/parallel-feature-development",
+        "skills/plugins/agent-teams@claude-code-workflows/skills/task-coordination-strategies",
+        "skills/plugins/agent-teams@claude-code-workflows/skills/team-communication-protocols",
+        "skills/plugins/agent-teams@claude-code-workflows/skills/team-composition-patterns"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "application-performance@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/application-performance/1.3.0",
+      "version": "1.3.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "backend-development@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/backend-development/1.3.0",
+      "version": "1.3.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/backend-development@claude-code-workflows/skills/api-design-principles",
+        "skills/plugins/backend-development@claude-code-workflows/skills/architecture-patterns",
+        "skills/plugins/backend-development@claude-code-workflows/skills/cqrs-implementation",
+        "skills/plugins/backend-development@claude-code-workflows/skills/event-store-design",
+        "skills/plugins/backend-development@claude-code-workflows/skills/microservices-patterns",
+        "skills/plugins/backend-development@claude-code-workflows/skills/projection-patterns",
+        "skills/plugins/backend-development@claude-code-workflows/skills/saga-orchestration",
+        "skills/plugins/backend-development@claude-code-workflows/skills/temporal-python-testing",
+        "skills/plugins/backend-development@claude-code-workflows/skills/workflow-orchestration-patterns"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "c4-architecture@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/c4-architecture/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "cartographer@cartographer-marketplace",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/cartographer-marketplace/cartographer/1.4.0",
+      "version": "1.4.0",
+      "gitCommitSha": "415691c771c89487410ea66a410e06620790621b",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/cartographer@cartographer-marketplace/skills/cartographer"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "cicd-automation@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/cicd-automation/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/cicd-automation@claude-code-workflows/skills/deployment-pipeline-design",
+        "skills/plugins/cicd-automation@claude-code-workflows/skills/github-actions-templates",
+        "skills/plugins/cicd-automation@claude-code-workflows/skills/gitlab-ci-patterns",
+        "skills/plugins/cicd-automation@claude-code-workflows/skills/secrets-management"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "circleback@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/circleback/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "6369dec7da4059dd0a12cf1b62ba749799ee15ef",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "clangd-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/clangd-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "claude-code-setup@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/claude-code-setup/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/claude-code-setup@claude-plugins-official/skills/claude-automation-recommender"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "claude-md-management@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/claude-md-management/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/claude-md-management@claude-plugins-official/skills/claude-md-improver"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "claude-opus-4-5-migration@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/claude-opus-4-5-migration/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/claude-opus-4-5-migration@claude-code-plugins/skills/claude-opus-4-5-migration"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "code-documentation@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/code-documentation/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "code-refactoring@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/code-refactoring/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "code-review@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/code-review/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "code-review@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/code-review/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "code-simplifier@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/code-simplifier/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "codebase-cleanup@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/codebase-cleanup/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "coderabbit@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/coderabbit/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "51651e86d8d71e150e13313f43298f212abb47db",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/coderabbit@claude-plugins-official/skills/code-review"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "codex-orchestrator@codex-orchestrator-marketplace",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/codex-orchestrator-marketplace/codex-orchestrator/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "2ccfe3a6aca79f3d417ddd3920ea3e77e68700a4",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/codex-orchestrator@codex-orchestrator-marketplace/skills/codex-orchestrator"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "commit-commands@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/commit-commands/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "commit-commands@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/commit-commands/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "conductor@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/conductor/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/conductor@claude-code-workflows/skills/context-driven-development",
+        "skills/plugins/conductor@claude-code-workflows/skills/track-management",
+        "skills/plugins/conductor@claude-code-workflows/skills/workflow-patterns"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "context-management@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/context-management/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "context7@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/context7/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "csharp-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/csharp-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "database-design@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/database-design/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/database-design@claude-code-workflows/skills/postgresql"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "database-migrations@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/database-migrations/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "debugging-toolkit@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/debugging-toolkit/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "dependency-management@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/dependency-management/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "deployment-validation@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/deployment-validation/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "distributed-debugging@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/distributed-debugging/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "documentation-generation@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/documentation-generation/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/documentation-generation@claude-code-workflows/skills/architecture-decision-records",
+        "skills/plugins/documentation-generation@claude-code-workflows/skills/changelog-automation",
+        "skills/plugins/documentation-generation@claude-code-workflows/skills/openapi-spec-generation"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "explanatory-output-style@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/explanatory-output-style/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "explanatory-output-style@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/explanatory-output-style/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "feature-dev@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/feature-dev/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "feature-dev@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/feature-dev/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "figma@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/figma/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "46a7d1bec64e0fd016eea6a66eda8ac34b44c491",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/figma@claude-plugins-official/skills/code-connect-components",
+        "skills/plugins/figma@claude-plugins-official/skills/create-design-system-rules",
+        "skills/plugins/figma@claude-plugins-official/skills/implement-design"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "firebase@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/firebase/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "firecrawl@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/firecrawl/1.0.3",
+      "version": "1.0.3",
+      "gitCommitSha": "684b975c8cc6bd0fcfa96f787900bf87fffeef57",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/firecrawl@claude-plugins-official/skills/firecrawl-cli"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "frontend-design@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/frontend-design/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/frontend-design@claude-plugins-official/skills/frontend-design"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "git-pr-workflows@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/git-pr-workflows/1.3.0",
+      "version": "1.3.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "github@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/github/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "gitlab@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/gitlab/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "gopls-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/gopls-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "greptile@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/greptile/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "hookify@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/hookify/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/hookify@claude-plugins-official/skills/writing-rules"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "huggingface-skills@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/huggingface-skills/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "99a61b26ea997305810fb538c414a21d9cb85dd2",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/huggingface-skills@claude-plugins-official/hf-mcp/skills/hf-mcp",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-cli",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-dataset-viewer",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-datasets",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-evaluation",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-jobs",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-model-trainer",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-paper-publisher",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-tool-builder",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/hugging-face-trackio",
+        "skills/plugins/huggingface-skills@claude-plugins-official/skills/huggingface-gradio"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "jdtls-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/jdtls-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "kotlin-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/kotlin-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "laravel-boost@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/laravel-boost/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "learning-output-style@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/learning-output-style/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "linear@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/linear/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "llm-application-dev@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/llm-application-dev/2.0.4",
+      "version": "2.0.4",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/embedding-strategies",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/hybrid-search-implementation",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/langchain-architecture",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/llm-evaluation",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/prompt-engineering-patterns",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/rag-implementation",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/similarity-search-patterns",
+        "skills/plugins/llm-application-dev@claude-code-workflows/skills/vector-index-tuning"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "lua-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/lua-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "observability-monitoring@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/observability-monitoring/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/observability-monitoring@claude-code-workflows/skills/distributed-tracing",
+        "skills/plugins/observability-monitoring@claude-code-workflows/skills/grafana-dashboards",
+        "skills/plugins/observability-monitoring@claude-code-workflows/skills/prometheus-configuration",
+        "skills/plugins/observability-monitoring@claude-code-workflows/skills/slo-implementation"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "php-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/php-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "pinecone@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/pinecone/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "f0466790faf538dcba71003c5b6b683272f8a5c8",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/pinecone@claude-plugins-official/skills/assistant",
+        "skills/plugins/pinecone@claude-plugins-official/skills/cli",
+        "skills/plugins/pinecone@claude-plugins-official/skills/docs",
+        "skills/plugins/pinecone@claude-plugins-official/skills/help",
+        "skills/plugins/pinecone@claude-plugins-official/skills/mcp",
+        "skills/plugins/pinecone@claude-plugins-official/skills/query",
+        "skills/plugins/pinecone@claude-plugins-official/skills/quickstart"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "playground@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/playground/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/playground@claude-plugins-official/skills/playground"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "playwright@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/playwright/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "plugin-dev@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/plugin-dev/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/agent-development",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/command-development",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/hook-development",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/mcp-integration",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/plugin-settings",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/plugin-structure",
+        "skills/plugins/plugin-dev@claude-plugins-official/skills/skill-development"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "posthog@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/posthog/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "4122119322584efc7a3e483b9c1cc2e4903ebeec",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/posthog@claude-plugins-official/skills/posthog-instrumentation"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "pr-review-toolkit@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/pr-review-toolkit/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "pyright-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/pyright-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "python-development@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/python-development/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/python-development@claude-code-workflows/skills/async-python-patterns",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-anti-patterns",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-background-jobs",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-code-style",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-configuration",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-design-patterns",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-error-handling",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-observability",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-packaging",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-performance-optimization",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-project-structure",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-resilience",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-resource-management",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-testing-patterns",
+        "skills/plugins/python-development@claude-code-workflows/skills/python-type-safety",
+        "skills/plugins/python-development@claude-code-workflows/skills/uv-package-manager"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "qodo-skills@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/qodo-skills/0.3.0",
+      "version": "0.3.0",
+      "gitCommitSha": "623eb4ed4364d8111f9a9132a791d7497d814b6a",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/qodo-skills@claude-plugins-official/skills/get-qodo-rules",
+        "skills/plugins/qodo-skills@claude-plugins-official/skills/qodo-pr-resolver"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "ralph-loop@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/ralph-loop/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "ralph-wiggum@claude-code-plugins",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-plugins/ralph-wiggum/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "9582ad480f687bbeaf0025852ac4f020b07f20bb",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "reverse-engineering@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/reverse-engineering/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/reverse-engineering@claude-code-workflows/skills/anti-reversing-techniques",
+        "skills/plugins/reverse-engineering@claude-code-workflows/skills/binary-analysis-patterns",
+        "skills/plugins/reverse-engineering@claude-code-workflows/skills/memory-forensics",
+        "skills/plugins/reverse-engineering@claude-code-workflows/skills/protocol-reverse-engineering"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "rust-analyzer-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/rust-analyzer-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "security-guidance@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/security-guidance/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "semgrep@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/semgrep/6f3962351041",
+      "version": "6f3962351041",
+      "gitCommitSha": "6f39623510411a255def92c98f89b595e0b086f4",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "sentry@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/sentry/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "2c34b9a2ecff03005d381e60013d7d5849801a62",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-android-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-browser-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-cocoa-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-code-review",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-create-alert",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-dotnet-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-feature-setup",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-fix-issues",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-go-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-nestjs-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-nextjs-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-node-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-otel-exporter-setup",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-php-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-pr-code-review",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-python-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-react-native-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-react-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-ruby-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-sdk-setup",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-sdk-skill-creator",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-sdk-upgrade",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-setup-ai-monitoring",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-svelte-sdk",
+        "skills/plugins/sentry@claude-plugins-official/skills/sentry-workflow"
+      ],
+      "mcpServers": {
+        "sentry": {
+          "type": "http",
+          "url": "https://mcp.sentry.dev/mcp"
+        }
+      }
+    },
+    {
+      "id": "serena@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/serena/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "skill-creator@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/skill-creator/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/skill-creator@claude-plugins-official/skills/skill-creator"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "slack@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/slack/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "08dd8db7f4207b1cfe9ccb38fc64fe971d1f9e15",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/slack@claude-plugins-official/skills/slack-messaging",
+        "skills/plugins/slack@claude-plugins-official/skills/slack-search"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "sonatype-guide@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/sonatype-guide/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "ce3e3f3da4585fd5c3ea03c55b7d024575a041f9",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "stripe@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/stripe/0.1.0",
+      "version": "0.1.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/stripe@claude-plugins-official/skills/stripe-best-practices"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "supabase@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/supabase/205b6e0b3036",
+      "version": "205b6e0b3036",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "superpowers@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/superpowers/4.3.1",
+      "version": "4.3.1",
+      "gitCommitSha": "e4a2375cb705ca5800f0833528ce36a3faf9017a",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/superpowers@claude-plugins-official/skills/brainstorming",
+        "skills/plugins/superpowers@claude-plugins-official/skills/dispatching-parallel-agents",
+        "skills/plugins/superpowers@claude-plugins-official/skills/executing-plans",
+        "skills/plugins/superpowers@claude-plugins-official/skills/finishing-a-development-branch",
+        "skills/plugins/superpowers@claude-plugins-official/skills/receiving-code-review",
+        "skills/plugins/superpowers@claude-plugins-official/skills/requesting-code-review",
+        "skills/plugins/superpowers@claude-plugins-official/skills/subagent-driven-development",
+        "skills/plugins/superpowers@claude-plugins-official/skills/systematic-debugging",
+        "skills/plugins/superpowers@claude-plugins-official/skills/test-driven-development",
+        "skills/plugins/superpowers@claude-plugins-official/skills/using-git-worktrees",
+        "skills/plugins/superpowers@claude-plugins-official/skills/using-superpowers",
+        "skills/plugins/superpowers@claude-plugins-official/skills/verification-before-completion",
+        "skills/plugins/superpowers@claude-plugins-official/skills/writing-plans",
+        "skills/plugins/superpowers@claude-plugins-official/skills/writing-skills"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "swift-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/swift-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "systems-programming@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/systems-programming/1.2.1",
+      "version": "1.2.1",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [
+        "skills/plugins/systems-programming@claude-code-workflows/skills/go-concurrency-patterns",
+        "skills/plugins/systems-programming@claude-code-workflows/skills/memory-safety-patterns",
+        "skills/plugins/systems-programming@claude-code-workflows/skills/rust-async-patterns"
+      ],
+      "mcpServers": null
+    },
+    {
+      "id": "team-collaboration@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/team-collaboration/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "typescript-lsp@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/typescript-lsp/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "205b6e0b30366a969412d9aab7b99bea99d58db1",
+      "copied": true,
+      "copiedPluginConfig": false,
+      "copiedReadme": true,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "unit-testing@claude-code-workflows",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-code-workflows/unit-testing/1.2.0",
+      "version": "1.2.0",
+      "gitCommitSha": "ade0c7a211d04fa1354d10359737cace5c6fc5b0",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": false,
+      "copiedSkillDirs": [],
+      "mcpServers": null
+    },
+    {
+      "id": "vercel@claude-plugins-official",
+      "enabled": true,
+      "installPath": "/home/nothiingf4/.claude/plugins/cache/claude-plugins-official/vercel/1.0.0",
+      "version": "1.0.0",
+      "gitCommitSha": "ae067751b4f42c97d13054211657275029ca8b6d",
+      "copied": true,
+      "copiedPluginConfig": true,
+      "copiedReadme": true,
+      "copiedSkillDirs": [
+        "skills/plugins/vercel@claude-plugins-official/skills/deploy",
+        "skills/plugins/vercel@claude-plugins-official/skills/logs",
+        "skills/plugins/vercel@claude-plugins-official/skills/setup"
+      ],
+      "mcpServers": null
+    }
+  ],
+  "codexNotes": [
+    "Claude SKILL.md directories are copied into Codex skill search path and are directly usable.",
+    "Claude plugin.json files are preserved as metadata under plugins/<plugin-id>/plugin.json.",
+    "MCP server entries from plugin.json are listed below; configure them in Codex separately if needed."
+  ]
+}
