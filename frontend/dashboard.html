@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSmart AI — Dashboard</title>
+    <link rel="stylesheet" href="css/neo-brutalism.css">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>Dashboard</h1>
+        <nav class="nav-links">
+            <a href="dashboard.html" class="active">Overview</a>
+            <a href="chat.html">AI Chat</a>
+            <a href="maps.html">Local Finder</a>
+            <button id="logout-btn" class="brutal-btn secondary" style="padding:8px 18px;">Logout</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 style="margin-bottom:25px; font-family:'Space Mono',monospace;">Welcome Back, User!</h2>
+
+        <!-- Top Stats -->
+        <div class="stats-grid">
+            <div class="stat-card">
+                <span class="stat-num" style="color:var(--accent-red);">🔥 5</span>
+                <span class="stat-label">Day Streak</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num" style="color:var(--accent-green);">🥑 12</span>
+                <span class="stat-label">Healthy Logs</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num" style="color:var(--accent-blue);">📊 7.8</span>
+                <span class="stat-label">Avg Health Score</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-num" style="color:var(--accent-purple);">🧠 24</span>
+                <span class="stat-label">AI Interactions</span>
+            </div>
+        </div>
+
+        <!-- Calorie Progress -->
+        <div class="brutal-card">
+            <h3>Today's Calorie Goal</h3>
+            <div class="progress-container">
+                <div class="progress-fill" id="cal-fill" style="width:0%; background:var(--accent-green);"></div>
+                <span class="progress-label" id="cal-label">0 / 2200 kcal</span>
+            </div>
+            <p id="cal-msg" style="margin-top:12px; font-weight:600;"></p>
+        </div>
+
+        <!-- Weekly Bar Chart -->
+        <div class="brutal-card">
+            <h3>Weekly Calorie Intake</h3>
+            <div class="bar-chart" id="weekly-chart"></div>
+            <p style="margin-top:30px; font-size:0.85rem; color:#666;">Simulated data — connects to real tracking with backend integration.</p>
+        </div>
+
+        <!-- Macro Breakdown -->
+        <div class="brutal-card" style="background:var(--bg-accent);">
+            <h3>Today's Macro Breakdown</h3>
+            <div class="stats-grid" style="margin-top:15px;">
+                <div class="stat-card" style="border-left:6px solid var(--accent-red);">
+                    <span class="stat-num" id="macro-protein">0g</span>
+                    <span class="stat-label">Protein</span>
+                </div>
+                <div class="stat-card" style="border-left:6px solid var(--accent-blue);">
+                    <span class="stat-num" id="macro-carbs">0g</span>
+                    <span class="stat-label">Carbs</span>
+                </div>
+                <div class="stat-card" style="border-left:6px solid var(--accent-orange);">
+                    <span class="stat-num" id="macro-fats">0g</span>
+                    <span class="stat-label">Fats</span>
+                </div>
+                <div class="stat-card" style="border-left:6px solid var(--accent-green);">
+                    <span class="stat-num" id="macro-fiber">0g</span>
+                    <span class="stat-label">Fiber</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Daily Tip + Quick Actions -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+            <div class="brutal-card">
+                <h3>Daily Nutrition Tip</h3>
+                <p id="daily-tip" style="font-size:1.05rem; font-weight:600; margin-top:10px;"></p>
+            </div>
+            <div class="brutal-card" style="display:flex; flex-direction:column; gap:12px;">
+                <h3>Quick Actions</h3>
+                <a href="chat.html" class="brutal-btn" style="width:100%; box-sizing:border-box;">Log a Meal</a>
+                <a href="maps.html" class="brutal-btn blue" style="width:100%; box-sizing:border-box;">Find Healthy Food</a>
+            </div>
+        </div>
+
+        <!-- Recent Meals Log -->
+        <div class="brutal-card">
+            <h3>Recent Meal Log</h3>
+            <div id="meal-log"></div>
+        </div>
+    </div>
+
+    <footer class="brutal-footer">
+        <p>&copy; 2026 NutriSmart AI &mdash; Eat Smart. Feel Great.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

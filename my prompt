@@ -1,3 +1,5 @@
+sirs instruction
+----------------------------------------
 Add voice conversations
 Real-time voice with the Gemini Live API
 Use Google Search data
@@ -11,8 +13,9 @@ make it should be able to deploy
 firt structure allmy abv prompt then pass through all skill file 
 
 my gemni api key: AIzaSyALN3KBCbIIbTa7KjH6QUrRqPysxh7uSr0
-create user story for my ps based on create a project that will help me to learn new things and get better at coding 
+create user story for my ps based on create a project that will help me to learn new things and get better at coding
 
+------------------------------------------------------
 use gemmini 3.0 flash for stich and .md file 
 workflow design plan md files  so it doesnot halicinate it generate the code and check wheather there is any bug acc do the plan.d file so it can correctly make 
 bef starting plan md tell ai to make detailed agent.md file to make rules to not deviate from it so get it make certain things out of it.
@@ -27,4 +30,21 @@ create precommit hooks for security todefine some think for security reviewer sk
 
 ask the ai to check that the hardcoded file is not present in the project and if it is present then remove it and add itin the .env file 
 
+when i used to debug - By using  google chrome mcp use to test the code and check for the bugs and fix them 
 
+to make architecture soln what should i do basically it should do in plan.md by making a reverse prompt to specify my decisons in it to what tech stack to use and why only generate in this way
+
+google mcp - by use playwrite cypheres but sir said it
+
+when ot using sub agent always use root agent
+
+install lsp when it is not recognisiing code 
+
+google cloud run 
+always track the context window
+artifacts are basically the code window 
+make well defined user-stories and epics req for building
+reverse promptiing one of the best approch for making 
+
+
+how can easily deloy the app using cloud run  with docker   and all so keep some thing for it in md file    

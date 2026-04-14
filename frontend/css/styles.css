@@ -1,0 +1,111 @@
+:root {
+    --bg-color: #f4f4f0;
+    --text-color: #111;
+    --accent: #ff4d4d;
+    --accent-hover: #ff1a1a;
+    --border-color: #111;
+    --shadow: 6px 6px 0px #111;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#app {
+    width: 100%;
+    max-width: 800px;
+}
+
+.view {
+    display: none;
+}
+
+.view.active {
+    display: block;
+}
+
+.brutal-box {
+    border: 3px solid var(--border-color);
+    box-shadow: var(--shadow);
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 0;
+}
+
+.brutal-btn {
+    background: var(--accent);
+    color: #fff;
+    border: 3px solid var(--border-color);
+    box-shadow: 4px 4px 0px var(--border-color);
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.1s, box-shadow 0.1s;
+}
+
+.brutal-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: 0px 0px 0px var(--border-color);
+}
+
+.brutal-btn.small {
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    box-shadow: 2px 2px 0px var(--border-color);
+}
+
+.brutal-input {
+    border: 3px solid var(--border-color);
+    padding: 10px;
+    font-family: inherit;
+    font-size: 1rem;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    border-bottom: 3px solid var(--border-color);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    border-bottom: none;
+    margin: 0;
+    padding: 0;
+}
+
+.chat-output {
+    height: 250px;
+    overflow-y: auto;
+    background: #eef;
+    margin-bottom: 15px;
+    box-shadow: none;
+    border: 2px dashed var(--border-color);
+}
+
+.chat-output p {
+    margin: 5px 0;
+    padding: 5px;
+    border-bottom: 1px dashed #ccc;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}

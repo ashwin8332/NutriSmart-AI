@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSmart AI — Contact</title>
+    <link rel="stylesheet" href="css/neo-brutalism.css">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>NutriSmart AI</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="tech-stack.html">Tech Stack</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="login.html" class="brutal-btn secondary" style="padding:8px 18px;">Login</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="brutal-card">
+            <h2>Get In Touch</h2>
+            <p style="margin-bottom:25px;">Have questions about your diet, want to report a bug, or share feedback? We'd love to hear from you.</p>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="c-name">Name</label>
+                    <input type="text" id="c-name" class="brutal-input" required placeholder="Your full name">
+                </div>
+                <div class="form-group">
+                    <label for="c-email">Email</label>
+                    <input type="email" id="c-email" class="brutal-input" required placeholder="you@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="c-subject">Subject</label>
+                    <input type="text" id="c-subject" class="brutal-input" required placeholder="What is this about?">
+                </div>
+                <div class="form-group">
+                    <label for="c-message">Message</label>
+                    <textarea id="c-message" class="brutal-input" rows="5" required placeholder="Your message..."></textarea>
+                </div>
+                <button type="submit" class="brutal-btn" style="width:100%;">Send Message</button>
+            </form>
+            <div id="contact-success" style="display:none; margin-top:20px; padding:18px; background:var(--accent-green); color:#111; border:4px solid #111; font-weight:700; text-align:center; font-family:'Space Mono',monospace;">
+                ✅ Message sent successfully! We'll get back to you soon.
+            </div>
+        </div>
+    </div>
+
+    <footer class="brutal-footer">
+        <p>&copy; 2026 NutriSmart AI &mdash; Eat Smart. Feel Great.</p>
+    </footer>
+
+    <script>
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        this.style.display = 'none';
+        document.getElementById('contact-success').style.display = 'block';
+    });
+    </script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+# 📄 REQUIREMENTS.md — NutriSmart Professional Requirements
+> **Project**: NutriSmart — AI-Powered Smart Food Choices & Healthy Eating Platform  
+> **Version**: 1.0.0 | **Date**: 2026-04-14  
+> **Classification**: Product Requirements Document (PRD)
+
+---
+
+## 1. Executive Summary
+
+NutriSmart is an AI-powered web application that empowers individuals to make better food choices and build sustainable healthy eating habits. By leveraging Google Gemini 2.0, real-time search grounding, voice interaction, and contextual location data, NutriSmart acts as a personal nutritionist available 24/7.
+
+**Core Problem**: 72% of people know they should eat healthier but lack real-time, personalized, contextual guidance at the moment of food decision.
+
+**Core Solution**: An AI companion that understands context (where you are, what you can cook, what you like) and gives actionable, voice-enabled food guidance in real time.
+
+---
+
+## 2. Stakeholders
+
+| Stakeholder | Role | Interest |
+|-------------|------|----------|
+| End User | Primary | Improve diet, learn nutrition, build habits |
+| Developer | Builder | Learn coding through AI-assisted development |
+| Anthropic/Google | Platform | API usage, responsible AI |
+
+---
+
+## 3. Functional Requirements
+
+### 3.1 Authentication (FR-AUTH)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-AUTH-01 | User can sign up with name, email, password | P0 |
+| FR-AUTH-02 | User can log in with email and password | P0 |
+| FR-AUTH-03 | Demo credentials provided (demo@nutrismart.ai / Demo@1234) | P0 |
+| FR-AUTH-04 | Session persists via localStorage (Phase 1) | P0 |
+| FR-AUTH-05 | Logout clears session and redirects to login | P0 |
+| FR-AUTH-06 | Password validation: min 8 chars, 1 uppercase, 1 number | P1 |
+| FR-AUTH-07 | SQLite user persistence (Phase 2 backend) | P2 |
+
+### 3.2 Home & Marketing Pages (FR-PAGES)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-PAGES-01 | Home page with hero, features, testimonials, CTA | P0 |
+| FR-PAGES-02 | About page with mission, team, values | P0 |
+| FR-PAGES-03 | Contact page with form (frontend validation) | P0 |
+| FR-PAGES-04 | Tech Stack page showcasing all technologies used | P0 |
+| FR-PAGES-05 | Responsive on mobile, tablet, desktop | P0 |
+| FR-PAGES-06 | Navigation with active state highlighting | P0 |
+
+### 3.3 Food Intelligence (FR-FOOD)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-FOOD-01 | Text-based food analysis via Gemini 2.0 Flash | P0 |
+| FR-FOOD-02 | Meal recommendation based on health goals | P0 |
+| FR-FOOD-03 | Nutritional breakdown (calories, macros, micros) | P0 |
+| FR-FOOD-04 | Search grounding for real-time nutrition data | P0 |
+| FR-FOOD-05 | Meal logging with history | P1 |
+| FR-FOOD-06 | Weekly nutrition summary | P1 |
+| FR-FOOD-07 | Allergen detection and warnings | P1 |
+| FR-FOOD-08 | Recipe suggestion from available ingredients | P1 |
+
+### 3.4 Voice Interaction (FR-VOICE)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-VOICE-01 | Real-time voice conversation via Gemini Live API | P0 |
+| FR-VOICE-02 | Push-to-talk or continuous listening mode | P0 |
+| FR-VOICE-03 | Voice responses with text transcript | P0 |
+| FR-VOICE-04 | Voice-activated food logging | P1 |
+| FR-VOICE-05 | Multilingual voice support (EN default) | P2 |
+
+### 3.5 Location & Maps (FR-MAPS)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-MAPS-01 | Find healthy restaurants near user location | P0 |
+| FR-MAPS-02 | Maps grounding for real-time location data | P0 |
+| FR-MAPS-03 | Filter by cuisine type and health rating | P1 |
+| FR-MAPS-04 | Grocery store finder with healthy options filter | P1 |
+
+### 3.6 Learning & Habit Building (FR-LEARN)
+| ID | Requirement | Priority |
+|----|-------------|----------|
+| FR-LEARN-01 | Daily nutrition tips via Gemini | P0 |
+| FR-LEARN-02 | Habit streak tracking (frontend state) | P1 |
+| FR-LEARN-03 | Progress visualization (charts) | P1 |
+| FR-LEARN-04 | Personalized learning path for nutrition knowledge | P1 |
+| FR-LEARN-05 | Coding learning integration (meta-feature for developer) | P2 |
+
+---
+
+## 4. Non-Functional Requirements
+
+### 4.1 Performance (NFR-PERF)
+| ID | Requirement | Target |
+|----|-------------|--------|
+| NFR-PERF-01 | Initial page load | < 2 seconds |
+| NFR-PERF-02 | AI response latency | < 3 seconds |
+| NFR-PERF-03 | Voice latency (Gemini Live) | < 500ms |
+| NFR-PERF-04 | Lighthouse performance score | > 85 |
+
+### 4.2 Security (NFR-SEC)
+| ID | Requirement |
+|----|-------------|
+| NFR-SEC-01 | No API keys in source code (environment variables only) |
+| NFR-SEC-02 | XSS protection via input sanitization |
+| NFR-SEC-03 | CORS properly configured |
+| NFR-SEC-04 | HTTPS enforced in production |
+| NFR-SEC-05 | Pre-commit hooks block secret leakage |
+| NFR-SEC-06 | Content Security Policy headers |
+
+### 4.3 Accessibility (NFR-A11Y)
+| ID | Requirement |
+|----|-------------|
+| NFR-A11Y-01 | WCAG 2.1 AA compliance |
+| NFR-A11Y-02 | Keyboard navigation support |
+| NFR-A11Y-03 | Screen reader compatible |
+| NFR-A11Y-04 | Color contrast ratio ≥ 4.5:1 |
+
+### 4.4 Deployment (NFR-DEPLOY)
+| ID | Requirement |
+|----|-------------|
+| NFR-DEPLOY-01 | Docker containerized |
+| NFR-DEPLOY-02 | Google Cloud Run compatible |
+| NFR-DEPLOY-03 | Environment-based configuration |
+| NFR-DEPLOY-04 | Zero-downtime deployment |
+| NFR-DEPLOY-05 | Auto-scaling (Cloud Run native) |
+
+---
+
+## 5. Integration Requirements
+
+| Integration | API | Purpose |
+|-------------|-----|---------|
+| Gemini 2.0 Flash | `generativelanguage.googleapis.com` | Core AI intelligence |
+| Gemini Live API | WebSocket / gRPC | Real-time voice |
+| Google Search Grounding | Grounding tool in Gemini | Real-time nutrition data |
+| Google Maps Grounding | Maps tool in Gemini | Local food discovery |
+
+---
+
+## 6. Demo Credentials (Phase 1)
+
+```
+Email:    demo@nutrismart.ai
+Password: Demo@1234
+Name:     Alex Demo
+
+Email:    test@nutrismart.ai  
+Password: Test@1234
+Name:     Taylor Test
+```
+
+---
+
+## 7. Out of Scope (Phase 1)
+
+- Payment processing
+- Social sharing features
+- Doctor/dietitian integration
+- Wearable device sync
+- Native mobile apps (iOS/Android)
+- Real-time backend (SQLite is Phase 2)

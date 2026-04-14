@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSmart AI — Login</title>
+    <link rel="stylesheet" href="css/neo-brutalism.css">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>NutriSmart AI</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <div class="container auth-container">
+        <div class="brutal-card">
+            <h2 style="text-align:center;">Welcome Back</h2>
+            <p style="text-align:center; margin-bottom:25px;">Use demo credentials to explore the platform.</p>
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="login-email">Email</label>
+                    <input type="email" id="login-email" class="brutal-input" value="demo@nutrismart.ai" required>
+                </div>
+                <div class="form-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" class="brutal-input" value="Demo@1234" required>
+                </div>
+                <div id="login-error" style="display:none; padding:12px; background:var(--accent-red); color:#fff; border:3px solid #111; font-weight:700; margin-bottom:15px; text-align:center;">
+                    Invalid credentials. Try demo@nutrismart.ai / Demo@1234
+                </div>
+                <button type="submit" class="brutal-btn" style="width:100%;">Access Dashboard</button>
+            </form>
+            <p style="text-align:center; margin-top:20px;">No account? <a href="signup.html" style="color:var(--accent-blue); font-weight:700; text-decoration:underline;">Sign up</a></p>
+        </div>
+    </div>
+
+    <footer class="brutal-footer">
+        <p>&copy; 2026 NutriSmart AI &mdash; Eat Smart. Feel Great.</p>
+    </footer>
+    <script src="js/auth.js"></script>
+</body>
+</html>

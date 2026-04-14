@@ -1,0 +1,19 @@
+:root {
+    /* Neo Brutalism Palette */
+    --bg: #f5f0e8;
+    --bg-accent: #ffeb3b;
+    --bg-card: #ffffff;
+    --text: #1a1a1a;
+    --border: #1a1a1a;
+    --accent-red: #ff4757;
+    --accent-blue: #3742fa;
+    --accent-green: #2ed573;
+    --accent-orange: #ffa502;
+    --accent-purple: #7c5cfc;
+
+    /* Sizing */
+    --border-w: 4px;
+    --shadow-sm: 4px 4px 0px var(--border);
+    --shadow-md: 8px 8px 0px var(--border);
+    --radius: 0px;
+}

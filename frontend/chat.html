@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSmart AI — AI Chat</title>
+    <link rel="stylesheet" href="css/neo-brutalism.css">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>AI Nutritionist</h1>
+        <nav class="nav-links">
+            <a href="dashboard.html">Overview</a>
+            <a href="chat.html" class="active">AI Chat</a>
+            <a href="maps.html">Local Finder</a>
+            <button id="logout-btn" class="brutal-btn secondary" style="padding:8px 18px;">Logout</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="brutal-card">
+            <h2>Chat with AI</h2>
+            <p style="margin-bottom:15px;">Describe your meal or ask for dietary advice. The AI will analyze nutrition, suggest improvements, and track your intake.</p>
+
+            <div id="chat-output" class="chat-box">
+                <div class="chat-msg ai"><strong>AI:</strong> Hello! What did you eat today, or what dietary advice do you need?</div>
+            </div>
+
+            <div style="display:flex; gap:10px;">
+                <input type="text" id="ai-input" class="brutal-input" style="margin:0;" placeholder="e.g. I had a grilled chicken salad for lunch..." autofocus>
+                <button id="send-btn" class="brutal-btn" style="white-space:nowrap;">Send</button>
+            </div>
+        </div>
+
+        <!-- Quick Prompts -->
+        <div class="brutal-card" style="background:var(--bg-accent);">
+            <h3>Quick Prompts</h3>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+                <button class="brutal-btn secondary quick-prompt" style="font-size:0.85rem; padding:8px 16px;">Analyze my breakfast</button>
+                <button class="brutal-btn secondary quick-prompt" style="font-size:0.85rem; padding:8px 16px;">Suggest a healthy dinner</button>
+                <button class="brutal-btn secondary quick-prompt" style="font-size:0.85rem; padding:8px 16px;">What should I snack on?</button>
+                <button class="brutal-btn secondary quick-prompt" style="font-size:0.85rem; padding:8px 16px;">How much protein do I need?</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="brutal-footer">
+        <p>&copy; 2026 NutriSmart AI &mdash; Eat Smart. Feel Great.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>

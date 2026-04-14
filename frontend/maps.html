@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriSmart AI — Local Finder</title>
+    <link rel="stylesheet" href="css/neo-brutalism.css">
+</head>
+<body>
+    <header class="nav-header">
+        <h1>Local Finder</h1>
+        <nav class="nav-links">
+            <a href="dashboard.html">Overview</a>
+            <a href="chat.html">AI Chat</a>
+            <a href="maps.html" class="active">Local Finder</a>
+            <button id="logout-btn" class="brutal-btn secondary" style="padding:8px 18px;">Logout</button>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="brutal-card" style="background:var(--bg-accent);">
+            <h2>Find Healthy Food Nearby</h2>
+            <p style="margin-bottom:20px;">Uses Google Maps Grounding to discover health-conscious restaurants and grocery stores near you.</p>
+            <div class="map-area" id="map-placeholder">
+                📍 Interactive Map — Click "Scan" to load results
+            </div>
+            <button id="locate-btn" class="brutal-btn" style="width:100%;">Scan for Healthy Options</button>
+        </div>
+
+        <div id="location-results"></div>
+
+        <div class="brutal-card" id="filter-section" style="display:none;">
+            <h3>Filter Results</h3>
+            <div style="display:flex; gap:10px; flex-wrap:wrap; margin-top:10px;">
+                <button class="brutal-btn secondary filter-btn" data-filter="all" style="font-size:0.85rem; padding:8px 16px;">All</button>
+                <button class="brutal-btn secondary filter-btn" data-filter="vegan" style="font-size:0.85rem; padding:8px 16px;">🥬 Vegan</button>
+                <button class="brutal-btn secondary filter-btn" data-filter="salad" style="font-size:0.85rem; padding:8px 16px;">🥗 Salads</button>
+                <button class="brutal-btn secondary filter-btn" data-filter="organic" style="font-size:0.85rem; padding:8px 16px;">🌿 Organic</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="brutal-footer">
+        <p>&copy; 2026 NutriSmart AI &mdash; Eat Smart. Feel Great.</p>
+    </footer>
+
+    <script src="js/auth.js"></script>
+    <script src="js/maps.js"></script>
+</body>
+</html>
