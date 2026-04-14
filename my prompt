@@ -3,9 +3,28 @@ Real-time voice with the Gemini Live API
 Use Google Search data
 Access real-time info with Search Grounding
 Use Google Maps data
+
 Access real-time info with Maps Grounding
 make use of Neo brutalism theme for ui make home ,about, contact, tech stack pages
 also make login signup page that for authentication only make use of demo credentials only make the frontend for now but add req when i need to add the  backend using sqllite also make it creative also should align to the the below theme or problem statement
 make it should be able to deploy 
 firt structure allmy abv prompt then pass through all skill file 
+
 my gemni api key: AIzaSyALN3KBCbIIbTa7KjH6QUrRqPysxh7uSr0
+create user story for my ps based on create a project that will help me to learn new things and get better at coding 
+
+use gemmini 3.0 flash for stich and .md file 
+workflow design plan md files  so it doesnot halicinate it generate the code and check wheather there is any bug acc do the plan.d file so it can correctly make 
+bef starting plan md tell ai to make detailed agent.md file to make rules to not deviate from it so get it make certain things out of it.
+
+token optimization for making big project root agent of md progressive discovery of module only the particular file can be located 
+always build as no of subagent for each module and make it in md file
+
+every token uses in a single prompt so make it in such a way that it doesnot exceed the token limit as they have shorter context view as we give more context in prompt it will not able to generate the code 
+so make it in such a way that it doesnot exceed the token limit
+
+create precommit hooks for security todefine some think for security reviewer skill acc toprofile 
+
+ask the ai to check that the hardcoded file is not present in the project and if it is present then remove it and add itin the .env file 
+
+
