@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NutriSmart AI — Local Finder</title>
     <link rel="stylesheet" href="css/neo-brutalism.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <style>
+        #map { height: 400px; border: var(--border-w) solid var(--border); box-shadow: var(--shadow-md); z-index: 1; }
+    </style>
 </head>
 <body>
     <header class="nav-header">
@@ -18,13 +23,13 @@
     </header>
 
     <div class="container">
-        <div class="brutal-card" style="background:var(--bg-accent);">
+        <div class="brutal-card" style="background: var(--bg-accent);">
             <h2>Find Healthy Food Nearby</h2>
-            <p style="margin-bottom:20px;">Uses Google Maps Grounding to discover health-conscious restaurants and grocery stores near you.</p>
-            <div class="map-area" id="map-placeholder">
-                📍 Interactive Map — Click "Scan" to load results
+            <p style="margin-bottom:20px;">Uses OpenStreetMap + Google Maps Grounding to discover health-conscious restaurants and grocery stores near you.</p>
+            <div id="map"></div>
+            <div style="margin-top:15px;">
+                <button id="locate-btn" class="brutal-btn" style="width:100%;">📍 Scan My Location for Healthy Options</button>
             </div>
-            <button id="locate-btn" class="brutal-btn" style="width:100%;">Scan for Healthy Options</button>
         </div>
 
         <div id="location-results"></div>
