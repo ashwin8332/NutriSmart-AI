@@ -1,32 +1,33 @@
-// === CHAT.JS — AI Nutritionist Mock ===
+// === CHAT.JS — AI Nutritionist (Backend Connected) ===
 document.addEventListener('DOMContentLoaded', () => {
     const sendBtn = document.getElementById('send-btn');
     const aiInput = document.getElementById('ai-input');
     const chatOutput = document.getElementById('chat-output');
 
-    // AI response database (mock)
-    const AI_RESPONSES = {
-        breakfast: `Great start! A typical healthy breakfast should include:\n• **Protein**: Eggs, Greek yogurt, or tofu (~20g)\n• **Complex carbs**: Oats, whole wheat toast (~30g)\n• **Healthy fats**: Avocado, nuts (~10g)\n\n**Estimated**: 350-450 kcal | Health Score: 8.5/10`,
-        dinner: `For a healthy dinner, try:\n🥗 **Grilled salmon with roasted vegetables**\n• Salmon fillet (200g): 380 kcal, 42g protein\n• Broccoli + sweet potato: 150 kcal, 8g fiber\n• Total: ~530 kcal | Score: 9.2/10\n\nAlternative: Lentil soup with whole grain bread.`,
-        snack: `Smart snacking options:\n• 🥜 Handful of almonds (23 nuts): 164 kcal, 6g protein\n• 🍎 Apple with peanut butter: 200 kcal\n• 🥒 Veggies with hummus: 120 kcal\n\nAvoid: chips, candy bars, sugary drinks.`,
-        protein: `Daily protein needs depend on your goals:\n• **Maintenance**: 0.8g per kg body weight\n• **Muscle gain**: 1.6-2.2g per kg\n• **Weight loss**: 1.2-1.6g per kg\n\nFor a 70kg person, that's **56g-154g daily**.\nBest sources: chicken, fish, eggs, lentils, Greek yogurt.`,
-        default: [
-            `Based on your description, here's my analysis:\n• **Estimated calories**: 420 kcal\n• **Protein**: 28g | **Carbs**: 45g | **Fats**: 14g\n• **Health Score**: 7.8/10\n\n💡 **Tip**: Adding leafy greens would boost micronutrient density.`,
-            `Interesting choice! Here's the breakdown:\n• **Estimated calories**: 550 kcal\n• **Protein**: 32g | **Carbs**: 60g | **Fats**: 18g\n• **Health Score**: 7.2/10\n\n💡 **Suggestion**: Swap white rice for brown rice to add 3g fiber.`,
-            `Good meal! Analysis:\n• **Estimated calories**: 380 kcal\n• **Protein**: 24g | **Carbs**: 35g | **Fats**: 12g\n• **Health Score**: 8.5/10\n\n✅ Well balanced! Keep this pattern going.`,
-            `Noted! Let me break that down:\n• **Estimated calories**: 620 kcal\n• **Protein**: 18g | **Carbs**: 78g | **Fats**: 24g\n• **Health Score**: 6.5/10\n\n⚠️ High carbs detected. Consider more protein in your next meal.`
-        ]
-    };
+    // Get user from localStorage
+    const authData = JSON.parse(localStorage.getItem('nutrismart_auth') || '{}');
+    const userId = authData.userId || 1;
 
-    function getAIResponse(input) {
-        const lower = input.toLowerCase();
-        if (lower.includes('breakfast')) return AI_RESPONSES.breakfast;
-        if (lower.includes('dinner') || lower.includes('healthy')) return AI_RESPONSES.dinner;
-        if (lower.includes('snack')) return AI_RESPONSES.snack;
-        if (lower.includes('protein')) return AI_RESPONSES.protein;
-        const defaults = AI_RESPONSES.default;
-        return defaults[Math.floor(Math.random() * defaults.length)];
-    }
+    // Load chat history from backend
+    fetch(`/api/chat/history/${userId}`)
+        .then(r => r.json())
+        .then(data => {
+            if (data.history && data.history.length > 0) {
+                chatOutput.innerHTML = '';
+                data.history.forEach(msg => {
+                    appendMessage(msg.role === 'ai' ? 'AI' : 'User', msg.message, msg.role === 'ai');
+                });
+            }
+        })
+        .catch(() => { /* Backend not available, keep default greeting */ });
+
+    // Fallback mock responses (used if backend is down)
+    const FALLBACK = [
+        'Estimated: ~420 kcal. Protein: 28g, Carbs: 45g, Fats: 14g. Score: 7.8/10. Tip: Add leafy greens.',
+        'Good choice! ~550 kcal. Protein: 32g, Carbs: 60g, Fats: 18g. Score: 7.2/10.',
+        'Well balanced! ~380 kcal. Protein: 24g, Carbs: 35g, Fats: 12g. Score: 8.5/10.',
+        'Noted! ~620 kcal. Protein: 18g, Carbs: 78g, Fats: 24g. Score: 6.5/10. High carbs detected.'
+    ];
 
     function appendMessage(sender, text, isAI) {
         const div = document.createElement('div');
@@ -36,13 +37,13 @@ document.addEventListener('DOMContentLoaded', () => {
         chatOutput.scrollTop = chatOutput.scrollHeight;
     }
 
-    function handleSend() {
+    async function handleSend() {
         const text = aiInput.value.trim();
         if (!text) return;
         appendMessage('User', text, false);
         aiInput.value = '';
 
-        // Simulate AI thinking delay
+        // Show thinking indicator
         const thinking = document.createElement('div');
         thinking.className = 'chat-msg ai';
         thinking.innerHTML = '<strong>AI:</strong> Analyzing...';
@@ -50,10 +51,21 @@ document.addEventListener('DOMContentLoaded', () => {
         chatOutput.appendChild(thinking);
         chatOutput.scrollTop = chatOutput.scrollHeight;
 
-        setTimeout(() => {
+        try {
+            const res = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userId, message: text })
+            });
+            const data = await res.json();
             chatOutput.removeChild(thinking);
-            appendMessage('AI', getAIResponse(text), true);
-        }, 800 + Math.random() * 700);
+            appendMessage('AI', data.response, true);
+        } catch (err) {
+            // Fallback if backend is unavailable
+            chatOutput.removeChild(thinking);
+            const reply = FALLBACK[Math.floor(Math.random() * FALLBACK.length)];
+            appendMessage('AI', reply, true);
+        }
     }
 
     if (sendBtn) sendBtn.addEventListener('click', handleSend);
